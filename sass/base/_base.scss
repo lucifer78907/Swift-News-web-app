@@ -1,0 +1,19 @@
+// Global Resets
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem =10px
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: var(--color-white);
+}
