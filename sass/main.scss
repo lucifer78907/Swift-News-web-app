@@ -1,4 +1,8 @@
 @import "abstracts/variables";
+@import "base/animations";
 @import "base/base";
+@import "base/typography";
+@import "base/utility";
 @import "base/root";
-@import "layout/header";
+@import "components/btn";
+@import "layout/hero";

@@ -1,0 +1,15 @@
+.heading__primary {
+  font-family: var(--font-cardo);
+  font-size: 9.6rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: $color-primary;
+  animation: slideInLeft 0.5s ease-out;
+}
+.heading__secondary {
+  font-size: 5rem;
+  letter-spacing: 1px;
+  color: var(--color-black-dark);
+  margin-top: -0.5rem;
+  animation: slideInRight 0.5s ease-out;
+}

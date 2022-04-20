@@ -1,0 +1,30 @@
+.hero {
+  margin-bottom: 10rem;
+  padding: 15rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, max-content));
+  column-gap: 8rem;
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    &--para {
+      font-size: 2rem;
+      line-height: 1.2;
+      color: var(--color-black-darkest);
+      width: 75%;
+      margin-top: 2rem;
+    }
+  }
+
+  &__btn {
+    align-self: flex-start;
+    animation: slideUp 0.5s ease-out;
+  }
+
+  &__img {
+    width: 80%;
+    justify-self: center;
+  }
+}
