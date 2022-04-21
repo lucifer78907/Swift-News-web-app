@@ -10,3 +10,7 @@
 .margin-bottom-xl {
   margin-bottom: 8rem;
 }
+.hidden {
+  opacity: 0;
+  transform: rotate(360deg);
+}

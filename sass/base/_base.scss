@@ -15,7 +15,15 @@ body {
   font-family: var(--font-roboto);
   line-height: 1;
   box-sizing: border-box;
-  background-color: var(--color-white);
+  transition: all 1s;
+}
+
+body.light-theme {
+  background-color: var(--background);
+}
+
+body.dark-theme {
+  background-color: var(--background);
 }
 
 .container {

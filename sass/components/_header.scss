@@ -1,0 +1,29 @@
+.header {
+  position: relative;
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+  }
+  &__icon.sunny {
+    box-shadow: 0 0rem 0.75rem rgba(0, 0, 0, 0.075);
+  }
+
+  &__icon.moon {
+    box-shadow: 0 0rem 0.75rem rgba(237, 241, 254, 0.618);
+  }
+
+  &__icon.sunny,
+  &__icon.moon {
+    transition: all 0.3s;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 4rem;
+    height: 4rem;
+    color: var(--text_color);
+    margin: 2rem;
+    border-radius: 50%;
+    background-color: var(--background);
+    padding: 1rem;
+  }
+}
