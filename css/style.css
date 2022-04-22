@@ -191,7 +191,8 @@ body.dark-theme {
     justify-self: center; }
 
 .benefits {
-  padding: 10rem; }
+  padding: 10rem;
+  margin-bottom: 10rem; }
   .benefits__text-box {
     position: relative;
     transition: all 0.5s;
@@ -215,20 +216,19 @@ body.dark-theme {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem; }
+    gap: 5rem;
+    position: relative; }
     .benefits__main-box--img {
       height: 50vh; }
-    .benefits__main-box--text {
+    .benefits__main-box--text--1, .benefits__main-box--text--2 {
       display: inline-block;
       font-size: 5rem;
       font-weight: 100;
       color: var(--text_color);
-      align-self: flex-end;
-      margin-right: 20%;
       position: relative;
       z-index: 10;
       transition: all 0.5s; }
-      .benefits__main-box--text::before {
+      .benefits__main-box--text--1::before, .benefits__main-box--text--2::before {
         content: "";
         position: absolute;
         display: inline-block;
@@ -239,15 +239,53 @@ body.dark-theme {
         background-color: #4c6ef5;
         transition: all 0.5s;
         z-index: -2; }
-      .benefits__main-box--text:hover {
+      .benefits__main-box--text--1:hover, .benefits__main-box--text--2:hover {
         color: #edf1ed;
         transform: translateY(-5px); }
-      .benefits__main-box--text:hover::before {
+      .benefits__main-box--text--1:hover::before, .benefits__main-box--text--2:hover::before {
         width: 105%;
         box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1); }
+    .benefits__main-box--text--1 {
+      align-self: flex-start;
+      margin-left: 20%; }
+    .benefits__main-box--text--2 {
+      align-self: flex-end;
+      margin-right: 20%; }
+  .benefits__list {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transition: all 0.5s; }
+  .benefits__link {
+    display: inline-block; }
+  .benefits__text:link, .benefits__text:visited {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; }
+  .benefits__text:hover {
+    transform: scale(1.1) translateY(-4px); }
+  .benefits__text {
+    padding: 2rem;
+    border-radius: 10000px;
+    background-color: #5172f5; }
+    .benefits__text--icon {
+      width: 3rem;
+      height: 3rem;
+      color: #edf1ed; }
 
 .invert_img {
   filter: invert(1); }
+
+.show_benefits {
+  bottom: -25%;
+  left: 30%; }
 
 .dark-theme {
   --background: var(--color-black-dark);
