@@ -1,6 +1,6 @@
 .hero {
-  margin-bottom: 10rem;
   padding: 15rem;
+  padding-bottom: 5rem;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(45rem, max-content));
@@ -21,6 +21,7 @@
   &__btn {
     align-self: flex-start;
     animation: slideUp 0.5s ease-out;
+    margin-top: 3.2rem;
   }
 
   &__img {

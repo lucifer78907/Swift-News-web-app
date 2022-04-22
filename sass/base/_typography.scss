@@ -13,3 +13,23 @@
   margin-top: -0.5rem;
   animation: slideInRight 0.5s ease-out;
 }
+
+.heading__tertiary {
+  display: inline-block;
+  font-size: 4.4rem;
+  color: var(--text_color);
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s;
+
+  &:hover {
+    border-bottom: 1px solid var(--text_color);
+  }
+
+  &::first-letter {
+    color: $color-primary;
+    font-weight: 700;
+  }
+}

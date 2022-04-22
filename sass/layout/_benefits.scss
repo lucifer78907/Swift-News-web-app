@@ -1,0 +1,51 @@
+.benefits {
+  padding: 10rem;
+  &__text-box {
+    position: relative;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 6rem;
+
+    & span {
+      transition: all 600ms;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    &:hover span {
+      transform: rotate(360deg);
+    }
+  }
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    color: var(--text_color);
+  }
+
+  &__main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    &--img {
+      height: 50vh;
+    }
+
+    &--text {
+      display: inline-block;
+      font-size: 5rem;
+      font-weight: 100;
+      color: var(--text_color);
+      align-self: flex-end;
+      margin-right: 20%;
+    }
+  }
+}
+.invert_img {
+  filter: invert(1);
+}
