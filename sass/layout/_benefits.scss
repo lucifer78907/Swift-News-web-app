@@ -43,6 +43,32 @@
       color: var(--text_color);
       align-self: flex-end;
       margin-right: 20%;
+      position: relative;
+      z-index: 10;
+      transition: all 0.5s;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        top: -10%;
+        left: -2%;
+        height: 120%;
+        width: 3%;
+        background-color: $color-primary;
+        transition: all 0.5s;
+        z-index: -2;
+      }
+
+      &:hover {
+        color: #edf1ed;
+        transform: translateY(-5px);
+      }
+
+      &:hover::before {
+        width: 105%;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+      }
     }
   }
 }

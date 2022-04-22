@@ -224,7 +224,27 @@ body.dark-theme {
       font-weight: 100;
       color: var(--text_color);
       align-self: flex-end;
-      margin-right: 20%; }
+      margin-right: 20%;
+      position: relative;
+      z-index: 10;
+      transition: all 0.5s; }
+      .benefits__main-box--text::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        top: -10%;
+        left: -2%;
+        height: 120%;
+        width: 3%;
+        background-color: #4c6ef5;
+        transition: all 0.5s;
+        z-index: -2; }
+      .benefits__main-box--text:hover {
+        color: #edf1ed;
+        transform: translateY(-5px); }
+      .benefits__main-box--text:hover::before {
+        width: 105%;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1); }
 
 .invert_img {
   filter: invert(1); }
