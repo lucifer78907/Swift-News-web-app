@@ -20,6 +20,6 @@ const benefitButton = document.querySelector(".benefits__main-box--text--2");
 const benefitList = document.querySelector(".benefits__list");
 
 benefitButton.addEventListener("click", function () {
-  benefitList.classList.toggle("hidden");
+  benefitList.classList.toggle("hidden_benefits");
   benefitList.classList.toggle("show_benefits");
 });
