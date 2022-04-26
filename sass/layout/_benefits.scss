@@ -96,6 +96,7 @@
 
   &__link {
     display: inline-block;
+    position: relative;
   }
 
   &__text:link,
@@ -113,6 +114,7 @@
     transform: scale(1.1) translateY(-4px);
   }
   &__text {
+    position: relative;
     padding: 2rem;
     border-radius: 10000px;
     background-color: lighten($color-primary, $amount: 1%);
@@ -121,6 +123,28 @@
       height: 3rem;
       color: #edf1ed;
     }
+  }
+
+  &__background {
+    @include absCen;
+    height: 7rem;
+    width: 7rem;
+    background-image: radial-gradient($color-primary, $color-primary-2);
+    border-radius: 50%;
+    transition: all 1s;
+  }
+
+  &--text--1,
+  &--text--2 {
+    z-index: 1000;
+  }
+  &__para {
+    position: absolute;
+    top: -500%;
+    left: -100%;
+    font-size: 12rem;
+    font-weight: 900;
+    color: #edf1ed;
   }
 }
 .invert_img {

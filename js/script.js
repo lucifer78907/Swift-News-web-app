@@ -23,3 +23,16 @@ benefitButton.addEventListener("click", function () {
   benefitList.classList.toggle("hidden_benefits");
   benefitList.classList.toggle("show_benefits");
 });
+
+// BENEFITS_link
+
+const featureEle1 = document.querySelector(".benefits--text--1");
+const featureEle2 = document.querySelector(".benefits--text--2");
+const paraEle = document.querySelector(".benefits__para");
+const backgroundEle = document.querySelector(".benefits__background");
+
+featureEle1.addEventListener("click", function () {
+  backgroundEle.classList.toggle("background__scaleup");
+  paraEle.classList.toggle("hidden__para");
+  bodyEle.classList.toggle("hide_overflow");
+});

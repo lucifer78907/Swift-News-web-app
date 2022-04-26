@@ -22,3 +22,16 @@
   max-width: 130rem;
   margin: 0 auto;
 }
+
+.background__scaleup {
+  transform: scale(100) !important;
+  z-index: 100;
+}
+
+.hidden__para {
+  display: none;
+}
+
+.hide_overflow {
+  overflow: hidden;
+}
