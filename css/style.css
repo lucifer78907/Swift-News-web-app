@@ -99,11 +99,11 @@ body.dark-theme {
   margin: 0 auto; }
 
 .background__scaleup {
-  transform: scale(100) !important;
+  transform: scale(70) !important;
   z-index: 100; }
 
 .hidden__para {
-  display: none; }
+  display: none !important; }
 
 .hide_overflow {
   overflow: hidden; }
@@ -284,8 +284,6 @@ body.dark-theme {
     gap: 1rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     transition: transform 0.3s; }
-  .benefits__text:hover {
-    transform: scale(1.1) translateY(-4px); }
   .benefits__text {
     position: relative;
     padding: 2rem;
@@ -304,16 +302,25 @@ body.dark-theme {
     width: 7rem;
     background-image: radial-gradient(#4c6ef5, #5c7cfa);
     border-radius: 50%;
-    transition: all 1s; }
+    transition: all 1s ease-in-out; }
   .benefits--text--1, .benefits--text--2 {
     z-index: 1000; }
   .benefits__para {
     position: absolute;
-    top: -500%;
+    top: -600%;
     left: -100%;
     font-size: 12rem;
     font-weight: 900;
-    color: #edf1ed; }
+    letter-spacing: 0.75px;
+    color: #edf1ed;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+    .benefits__para span {
+      font-size: 2.4rem;
+      font-weight: 400;
+      color: #edf1ed;
+      line-height: 1.5; }
 
 .invert_img {
   filter: invert(1); }

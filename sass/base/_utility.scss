@@ -24,12 +24,12 @@
 }
 
 .background__scaleup {
-  transform: scale(100) !important;
+  transform: scale(70) !important;
   z-index: 100;
 }
 
 .hidden__para {
-  display: none;
+  display: none !important;
 }
 
 .hide_overflow {
