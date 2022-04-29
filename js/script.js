@@ -1,4 +1,4 @@
-const heroBtnEle = document.querySelector(".header__link");
+const heroBtnEle = document.querySelector(".header__link-icon");
 const moonEle = document.querySelector(".moon");
 const sunEle = document.querySelector(".sunny");
 const bodyEle = document.querySelector("body");

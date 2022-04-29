@@ -162,9 +162,22 @@ body.dark-theme {
   opacity: 0; }
 
 .header {
-  position: relative; }
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   .header__link:link, .header__link:visited {
-    display: inline-block; }
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: var(--text_color);
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s; }
+    .header__link:link:hover, .header__link:visited:hover {
+      border-bottom: 1px solid var(--text_color); }
+    .header__link:link::first-letter, .header__link:visited::first-letter {
+      color: #4c6ef5;
+      font-weight: 700; }
   .header__icon.sunny {
     box-shadow: 0 0rem 0.75rem rgba(0, 0, 0, 0.075); }
   .header__icon.moon {
@@ -172,8 +185,8 @@ body.dark-theme {
   .header__icon.sunny, .header__icon.moon {
     transition: all 0.5s;
     position: absolute;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    right: 0;
     width: 4rem;
     height: 4rem;
     color: var(--text_color);
@@ -181,6 +194,15 @@ body.dark-theme {
     border-radius: 50%;
     background-color: var(--background);
     padding: 1rem; }
+  .header__img {
+    height: 10rem; }
+  .header__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 10rem; }
 
 .hero {
   padding: 15rem;

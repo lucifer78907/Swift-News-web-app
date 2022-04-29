@@ -1,8 +1,24 @@
 .header {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   &__link:link,
   &__link:visited {
     display: inline-block;
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: var(--text_color);
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s;
+    &:hover {
+      border-bottom: 1px solid var(--text_color);
+    }
+
+    &::first-letter {
+      color: $color-primary;
+      font-weight: 700;
+    }
   }
   &__icon.sunny {
     box-shadow: 0 0rem 0.75rem rgba(0, 0, 0, 0.075);
@@ -16,8 +32,8 @@
   &__icon.moon {
     transition: all 0.5s;
     position: absolute;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    right: 0;
     width: 4rem;
     height: 4rem;
     color: var(--text_color);
@@ -25,5 +41,18 @@
     border-radius: 50%;
     background-color: var(--background);
     padding: 1rem;
+  }
+
+  &__img {
+    height: 10rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 10rem;
   }
 }
