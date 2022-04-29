@@ -28,11 +28,43 @@ benefitButton.addEventListener("click", function () {
 
 const featureEle1 = document.querySelector(".benefits--text--1");
 const featureEle2 = document.querySelector(".benefits--text--2");
-const paraEle = document.querySelector(".benefits__para");
+const featureEle3 = document.querySelector(".benefits--text--3");
+const featureEle4 = document.querySelector(".benefits--text--4");
+const featureEle5 = document.querySelector(".benefits--text--5");
+const paraEle1 = document.querySelector(".benefits__para--1");
+const paraEle2 = document.querySelector(".benefits__para--2");
+const paraEle3 = document.querySelector(".benefits__para--3");
+const paraEle4 = document.querySelector(".benefits__para--4");
+const paraEle5 = document.querySelector(".benefits__para--5");
 const backgroundEle = document.querySelector(".benefits__background");
 
 featureEle1.addEventListener("click", function () {
   backgroundEle.classList.toggle("background__scaleup");
-  paraEle.classList.toggle("hidden__para");
+  paraEle1.classList.toggle("hidden__para");
   bodyEle.classList.toggle("hide_overflow");
+  featureEle1.classList.toggle("imp_benefit_link");
+});
+featureEle2.addEventListener("click", function () {
+  backgroundEle.classList.toggle("background__scaleup");
+  paraEle2.classList.toggle("hidden__para");
+  bodyEle.classList.toggle("hide_overflow");
+  featureEle2.classList.toggle("imp_benefit_link");
+});
+featureEle3.addEventListener("click", function () {
+  backgroundEle.classList.toggle("background__scaleup");
+  paraEle3.classList.toggle("hidden__para");
+  bodyEle.classList.toggle("hide_overflow");
+  featureEle3.classList.toggle("imp_benefit_link");
+});
+featureEle4.addEventListener("click", function () {
+  backgroundEle.classList.toggle("background__scaleup");
+  paraEle4.classList.toggle("hidden__para");
+  bodyEle.classList.toggle("hide_overflow");
+  featureEle4.classList.toggle("imp_benefit_link");
+});
+featureEle5.addEventListener("click", function () {
+  backgroundEle.classList.toggle("background__scaleup");
+  paraEle5.classList.toggle("hidden__para");
+  bodyEle.classList.toggle("hide_overflow");
+  featureEle5.classList.toggle("imp_benefit_link");
 });

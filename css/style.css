@@ -108,6 +108,9 @@ body.dark-theme {
 .hide_overflow {
   overflow: hidden; }
 
+.imp_benefit_link {
+  z-index: 1000; }
+
 :root {
   --font-cardo: "Cardo", serif;
   --font-roboto: "Roboto", sans-serif;
@@ -303,20 +306,21 @@ body.dark-theme {
     background-image: radial-gradient(#4c6ef5, #5c7cfa);
     border-radius: 50%;
     transition: all 1s ease-in-out; }
-  .benefits--text--1, .benefits--text--2 {
-    z-index: 1000; }
-  .benefits__para {
+  .benefits__para--1, .benefits__para--2, .benefits__para--3, .benefits__para--4, .benefits__para--5 {
     position: absolute;
-    top: -600%;
-    left: -100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 12rem;
     font-weight: 900;
     letter-spacing: 0.75px;
     color: #edf1ed;
     display: flex;
     flex-direction: column;
-    gap: 2rem; }
-    .benefits__para span {
+    gap: 4rem;
+    z-index: 10000;
+    text-align: center; }
+    .benefits__para--1 span, .benefits__para--2 span, .benefits__para--3 span, .benefits__para--4 span, .benefits__para--5 span {
       font-size: 2.4rem;
       font-weight: 400;
       color: #edf1ed;
