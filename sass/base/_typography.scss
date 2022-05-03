@@ -32,4 +32,16 @@
     color: $color-primary;
     font-weight: 700;
   }
+
+  &--footer {
+    color: #edf1ed;
+
+    &::first-letter {
+      color: currentColor;
+    }
+
+    &:hover {
+      border-bottom-color: #edf1ed;
+    }
+  }
 }

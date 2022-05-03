@@ -73,6 +73,12 @@ body.dark-theme {
   .heading__tertiary::first-letter {
     color: #4c6ef5;
     font-weight: 700; }
+  .heading__tertiary--footer {
+    color: #edf1ed; }
+    .heading__tertiary--footer::first-letter {
+      color: currentColor; }
+    .heading__tertiary--footer:hover {
+      border-bottom-color: #edf1ed; }
 
 .margin-bottom-sm {
   margin-bottom: 2rem; }
@@ -401,7 +407,7 @@ body.dark-theme {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 8rem; }
+  margin-bottom: 9.6rem; }
   .sign_up_now__main-box--img {
     height: 50vh;
     margin-top: -8rem; }
@@ -410,14 +416,31 @@ body.dark-theme {
     text-decoration: none;
     font-size: 5.2rem;
     font-weight: 100;
+    letter-spacing: 0.75px;
     background-image: linear-gradient(to right bottom, #4c6ef5, #5c7cfa);
     padding: 1.2rem 2rem;
     color: #edf1ed;
     border-radius: 11px;
+    border-bottom-left-radius: 0px;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-    transition: transform 500ms; }
+    transition: all 500ms; }
   .sign_up_now__main-box--btn:hover {
     transform: translateY(-2rem) scale(1.05); }
+  .sign_up_now__main-box--btn:active {
+    transform: translateY(5px); }
+
+.footer {
+  background-color: #4c6ef5;
+  padding: 8rem; }
+  .footer__text-box {
+    display: flex;
+    justify-content: center; }
+    .footer__text-box--text {
+      font-size: 2.4rem;
+      line-height: 1.6;
+      width: 70vw;
+      text-align: center;
+      color: #edf1ed; }
 
 .dark-theme {
   --background: var(--color-black-dark);
