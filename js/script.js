@@ -3,6 +3,7 @@ const moonEle = document.querySelector(".moon");
 const sunEle = document.querySelector(".sunny");
 const bodyEle = document.querySelector("body");
 const imgEle = document.querySelector(".benefits__main-box--img");
+const imgEle2 = document.querySelector(".sign_up_now__main-box--img");
 
 // Toggle Light and Dark theme
 heroBtnEle.addEventListener("click", function () {
@@ -13,6 +14,7 @@ heroBtnEle.addEventListener("click", function () {
 
   // Invert img color
   imgEle.classList.toggle("invert_img");
+  imgEle2.classList.toggle("invert_img");
 });
 
 // Showing the benefits

@@ -165,7 +165,8 @@ body.dark-theme {
   display: flex;
   gap: 4.8rem;
   text-align: center;
-  padding-top: 8rem; }
+  padding-top: 8rem;
+  margin-bottom: 8rem; }
   .features-icon {
     width: 3.2rem;
     height: 3.2rem;
@@ -173,6 +174,7 @@ body.dark-theme {
     margin-bottom: 2.6rem;
     border-radius: 50%;
     color: var(--text_color);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     transition: transform 0.5s; }
     .features-icon:hover {
       transform: translateY(-5px) scale(1.1); }
@@ -394,6 +396,28 @@ body.dark-theme {
 
 .categories {
   padding: 10rem; }
+
+.sign_up_now__main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem; }
+  .sign_up_now__main-box--img {
+    height: 50vh;
+    margin-top: -8rem; }
+  .sign_up_now__main-box--btn:link, .sign_up_now__main-box--btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 5.2rem;
+    font-weight: 100;
+    background-image: linear-gradient(to right bottom, #4c6ef5, #5c7cfa);
+    padding: 1.2rem 2rem;
+    color: #edf1ed;
+    border-radius: 11px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 500ms; }
+  .sign_up_now__main-box--btn:hover {
+    transform: translateY(-2rem) scale(1.05); }
 
 .dark-theme {
   --background: var(--color-black-dark);
