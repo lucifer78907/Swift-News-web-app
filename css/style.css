@@ -434,13 +434,36 @@ body.dark-theme {
   padding: 8rem; }
   .footer__text-box {
     display: flex;
-    justify-content: center; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem; }
     .footer__text-box--text {
       font-size: 2.4rem;
       line-height: 1.6;
       width: 70vw;
       text-align: center;
       color: #edf1ed; }
+  .footer__icon-box {
+    display: flex;
+    gap: 3.2rem; }
+    .footer__icon-box--icon {
+      width: 5rem;
+      height: 5rem;
+      color: #edf1ed;
+      transition: all 0.5s; }
+      .footer__icon-box--icon:hover {
+        transform: scale(1.2) translateY(-2px); }
+      .footer__icon-box--icon--1:hover {
+        color: #f06529; }
+      .footer__icon-box--icon--2:hover {
+        color: #cd6799; }
+      .footer__icon-box--icon--3:hover {
+        color: yellow; }
+      .footer__icon-box--icon--4:hover {
+        color: #cc3534; }
+      .footer__icon-box--icon--5:hover {
+        color: #edf1ed; }
 
 .dark-theme {
   --background: var(--color-black-dark);
