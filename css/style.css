@@ -464,6 +464,12 @@ body.dark-theme {
         color: #cc3534; }
       .footer__icon-box--icon--5:hover {
         color: #edf1ed; }
+  .footer__final {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; }
+    .footer__final--img {
+      height: 10vh; }
 
 .dark-theme {
   --background: var(--color-black-dark);

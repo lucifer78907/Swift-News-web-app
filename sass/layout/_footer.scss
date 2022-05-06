@@ -55,4 +55,13 @@
       }
     }
   }
+
+  &__final {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    &--img {
+      height: 10vh;
+    }
+  }
 }
