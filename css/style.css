@@ -50,7 +50,17 @@ body.dark-theme {
   font-weight: 400;
   letter-spacing: -1px;
   color: #4c6ef5;
-  animation: slideInLeft 0.5s ease-out; }
+  animation: slideInLeft 0.5s ease-out;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s; }
+  .heading__primary--sign_up {
+    font-size: 8rem;
+    display: inline-block; }
+    .heading__primary--sign_up:hover {
+      border-bottom: 1px solid #4c6ef5; }
+    .heading__primary--sign_up::first-letter {
+      color: #4c6ef5;
+      font-weight: 700; }
 
 .heading__secondary {
   font-size: 5rem;
@@ -470,6 +480,53 @@ body.dark-theme {
     align-items: center; }
     .footer__final--img {
       height: 10vh; }
+
+.sign_up {
+  padding: 10rem; }
+  .sign_up__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem; }
+  .sign_up__para {
+    display: inline-block;
+    font-size: 3.2rem;
+    font-weight: 100;
+    color: var(--text_color);
+    margin-bottom: 8rem; }
+  .sign_up__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem; }
+    .sign_up__form--field {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3.2rem; }
+    .sign_up__form--label {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--text_color); }
+      .sign_up__form--label::first-letter {
+        color: #4c6ef5;
+        font-weight: 700; }
+    .sign_up__form--input {
+      font-family: inherit;
+      font-size: 2rem;
+      border: none;
+      padding: 1.2rem 2.4rem;
+      border-radius: 11px;
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+      outline: none;
+      color: #777; }
+  .sign_up__button {
+    border: none;
+    color: transparent;
+    background-color: transparent; }
 
 .dark-theme {
   --background: var(--color-black-dark);
