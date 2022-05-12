@@ -528,6 +528,33 @@ body.dark-theme {
     color: transparent;
     background-color: transparent; }
 
+.btn--submit:link,
+.btn--submit:visited {
+  padding: 1rem 6rem;
+  margin-top: 3.2rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05); }
+
+.selection__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem; }
+  .selection__form--field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem; }
+  .selection__form--select {
+    font-family: inherit;
+    font-size: 2rem;
+    border: none;
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+    color: #fff;
+    background-color: #6482f6;
+    text-align: center; }
+
 .dark-theme {
   --background: var(--color-black-dark);
   --heading_primary_color: $color-primary;
