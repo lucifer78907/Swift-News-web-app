@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swift ~ News Web App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="light-theme">
+    <header class="header">
+      <img src="img/logo.png" alt="Website Logo" class="header__img" />
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="index.html" class="header__link">Home</a>
+          </li>
+          <li class="header__list-item">
+            <a href="index.html" class="header__link">Categories</a>
+          </li>
+
+          <li class="header__list-item">
+            <a href="#" class="header__link-icon"
+              ><ion-icon
+                name="sunny-outline"
+                class="header__icon sunny"
+              ></ion-icon>
+              <ion-icon
+                name="moon-outline"
+                class="header__icon moon hidden"
+              ></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="news">
+        <div class="news__header">
+          <h1 class="heading__primary heading__primary--news">Swift</h1>
+        </div>
+        <div class="news__categories">
+          <p class="news__categories--item news__categories--item__active">
+            Local
+          </p>
+          <p class="news__categories--item">Business</p>
+          <p class="news__categories--item">Sports</p>
+          <p class="news__categories--item">Tech</p>
+          <p class="news__categories--item">Celebrity</p>
+        </div>
+      </section>
+
+      <section class="news__blocks">
+        <article class="news__block">
+          <p class="news__block--heading">This is breaking news 1</p>
+          <p>
+            <a href="#/" class="news__block--read_more">Read More here</a>
+          </p>
+        </article>
+        <article class="news__block">
+          <p class="news__block--heading">This is breaking news 1</p>
+          <p>
+            <a href="#/" class="news__block--read_more">Read More here</a>
+          </p>
+        </article>
+        <article class="news__block">
+          <p class="news__block--heading">This is breaking news 1</p>
+          <p>
+            <a href="#/" class="news__block--read_more">Read More here</a>
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+  <script src="js/script.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</html>
